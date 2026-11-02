@@ -17,9 +17,9 @@ STM32F411_Project_test
 
 ##Firmware
 
-"RCC"
+"RCC-disable
 
-"CLOCK"
+"CLOCK
 
-"프로젝트 생성"
+"프로젝트 생성
 
