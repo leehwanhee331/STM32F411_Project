@@ -16,21 +16,21 @@ STM32F411_Project_test
 ##Furmware
 
 <p align="center">
-  <img src="sc_image_landing.jpg">
+  <img src="img/F1.PNG">
 </p>
 
 <p align="center">
-  <img src="sc_image_landing.jpg" width="80%">
+  <img src="img/F1.PNG" width="80%">
 </p>
 
 <p align="center">
-  <img src="sc_image_landing.jpg" width="200">
+  <img src="img/F1.PNG" width="200">
 </p>
 
 <p align="center">
-  <img src="sc_image_landing.jpg"  height="20%">
+  <img src="img/F1.PNG"  height="20%">
 </p>
 
 <p align="center">
-  <img src="sc_image_landing.jpg"  height="200">
+  <img src="img/F1.PNG"  height="200">
 </p>
