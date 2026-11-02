@@ -1,2 +1,39 @@
 # STM32F411_Project
 STM32F411_Project_test
+<<<<<<< HEAD
+=======
+
+#STM32F4111 Project
+
+## Hardware
+
+![STM32F411 블럭도](img/F1.PNG)
+![STM32F411 블럭도](img/F2.PNG)
+![STM32F411 블럭도](img/F3.PNG)
+![STM32F411 블럭도](img/F4.PNG)
+
+---
+
+
+##Firmware
+
+<p align="center">
+  <img src="img/F1.PNG">
+</p>
+
+<p align="center">
+  <img src="img/F1.PNG" width="80%">
+</p>
+
+<p align="center">
+  <img src="img/F2.PNG" width="200">
+</p>
+
+<p align="center">
+  <img src="img/F3.PNG"  height="20%">
+</p>
+
+<p align="center">
+  <img src="img/F4.PNG"  height="200">
+</p>
+>>>>>>> b1d48525464e85c799c46646f4b250be444e74e1
