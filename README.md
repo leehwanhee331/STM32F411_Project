@@ -17,23 +17,9 @@ STM32F411_Project_test
 
 ##Firmware
 
-<p align="center">
-  <img src="img/F1.PNG">
-</p>
+"RCC"
 
-<p align="center">
-  <img src="img/F1.PNG" width="80%">
-</p>
+"CLOCK"
 
-<p align="center">
-  <img src="img/F2.PNG" width="200">
-</p>
+"프로젝트 생성"
 
-<p align="center">
-  <img src="img/F3.PNG"  height="20%">
-</p>
-
-<p align="center">
-  <img src="img/F4.PNG"  height="200">
-</p>
->>>>>>> b1d48525464e85c799c46646f4b250be444e74e1
