@@ -13,7 +13,7 @@ STM32F411_Project_test
 ---
 
 
-##Furmware
+##Firmware
 
 <p align="center">
   <img src="img/F1.PNG">
@@ -24,13 +24,13 @@ STM32F411_Project_test
 </p>
 
 <p align="center">
-  <img src="img/F1.PNG" width="200">
+  <img src="img/F2.PNG" width="200">
 </p>
 
 <p align="center">
-  <img src="img/F1.PNG"  height="20%">
+  <img src="img/F3.PNG"  height="20%">
 </p>
 
 <p align="center">
-  <img src="img/F1.PNG"  height="200">
+  <img src="img/F4.PNG"  height="200">
 </p>
