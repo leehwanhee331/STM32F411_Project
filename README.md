@@ -13,7 +13,7 @@ STM32F411_Project_test
 ---
 
 
-##Firmware
+##Furmware
 
 <p align="center">
   <img src="sc_image_landing.jpg">
