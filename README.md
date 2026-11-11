@@ -7,6 +7,7 @@
 - [2. MemoryMap](#2-memorymap)
 - [3. Register](#3-register)
 - [4. Test](#4-test)
+- [6. GPIO LED Experiment](#6-gpio-led-experiment-stm32f411re
 
 ## 1.Architecture
 
@@ -735,5 +736,94 @@ SFR: 저장 공간이긴 한데, 이 공간에 값을 쓰거나 읽는 행위 �
 <img src="./img/F411_R_012.png"> <br>
 
 </details>
+
+## 6. GPIO LED Experiment (STM32F411RE)
+
+### 6.1 Experiment Overview
+
+STM32F411RE의 GPIO 출력 제어 기능을 이용하여 LED를 주기적으로 점멸시키고, STM32CubeIDE의 디버깅 기능을 통해 GPIO 레지스터의 상태를 확인하였다.
+
+또한 오실로스코프를 이용하여 GPIO 출력 신호의 Rising Edge와 Falling Edge를 관찰하였다.
+
+**Development Environment**
+- MCU: STM32F411RE
+- Board: NUCLEO-F411RE
+- IDE: STM32CubeIDE
+- Library: STM32 HAL
+- Debugger: ST-LINK
+- Oscilloscope: Tektronix TDS 2012B
+
+### 6.2 LED Control Code
+
+GPIO 출력 핀을 HIGH와 LOW로 반복 변경하여 LED를 점멸시켰다.
+
+```c
+int counter = 0;
+
+while (1)
+{
+    counter++;
+
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+    HAL_Delay(1000);
+
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+    HAL_Delay(1000);
+}
+```
+
+- HIGH 유지 시간: 1000 ms
+- LOW 유지 시간: 1000 ms
+- 전체 주기: 2 s
+- 점멸 주파수: 0.5 Hz
+- Duty Cycle: 50%
+
+### 6.3 GPIO Register Debugging
+
+STM32CubeIDE의 Debug 기능을 이용하여 GPIOA 레지스터 상태를 확인하였다.
+
+NUCLEO-F411RE 보드의 LD2 LED는 PA5 핀에 연결되어 있으며, GPIOA_ODR 레지스터의 5번 비트를 통해 출력 상태를 확인할 수 있다.
+
+**GPIO Register Monitoring**
+
+![GPIO Register Debugging](./img/gpio_debug1.png)
+
+**Disassembly Analysis**
+
+![Disassembly](./img/gpio_debug2.png)
+
+C 언어로 작성한 GPIO 제어 코드와 HAL_Delay 함수가 ARM Cortex-M4 명령어로 실행되는 과정을 확인하였다.
+
+**GPIO Output State**
+
+![GPIO Output](./img/gpio_debug3.png)
+
+GPIO 출력 상태 변화에 따른 레지스터 값을 디버깅 화면에서 관찰하였다.
+
+### 6.4 Oscilloscope Measurement
+
+Tektronix TDS 2012B 오실로스코프를 이용하여 GPIO 출력 신호의 전압 변화를 측정하였다.
+
+**Falling Edge (HIGH → LOW)**
+
+![Falling Edge](./img/gpio_falling.jpg)
+
+GPIO 출력이 HIGH에서 LOW로 전환되는 하강 에지를 관찰하였다.
+
+**Rising Edge (LOW → HIGH)**
+
+![Rising Edge](./img/gpio_rising.jpg)
+
+GPIO 출력이 LOW에서 HIGH로 전환되는 상승 에지를 관찰하였다.
+
+### 6.5 Experiment Result
+
+본 실험에서는 STM32F411RE의 GPIO 출력 기능을 이용하여 LED를 제어하고, 레지스터 및 어셈블리 명령어를 분석하였다.
+
+HAL_GPIO_WritePin 함수를 이용하여 GPIO 출력 상태를 변경하였으며, HAL_Delay 함수를 통해 1초 간격의 출력 전환을 구현하였다.
+
+STM32CubeIDE 디버거로 GPIOA 레지스터의 값을 확인하고, 오실로스코프를 통해 디지털 출력 신호의 Rising Edge와 Falling Edge를 관찰하였다.
+
+이를 통해 GPIO 출력 제어, 레지스터 동작 원리 및 디지털 신호 측정 방법을 이해하였다.
 
 
