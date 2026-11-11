@@ -627,6 +627,9 @@ SFR: 저장 공간이긴 한데, 이 공간에 값을 쓰거나 읽는 행위 �
 
 ## 6. GPIO LED Experiment (STM32F411RE)
 
+<details>
+<summary>F411</summary>
+
 ### 6.1 Experiment Overview
 
 STM32F411RE의 GPIO 출력 제어 기능을 이용하여 LED를 주기적으로 점멸시키고, STM32CubeIDE의 디버깅 기능을 통해 GPIO 레지스터의 상태를 확인하였다.
@@ -714,4 +717,4 @@ STM32CubeIDE 디버거로 GPIOA 레지스터의 값을 확인하고, 오실로�
 
 이를 통해 GPIO 출력 제어, 레지스터 동작 원리 및 디지털 신호 측정 방법을 이해하였다.
 
-
+</details>
