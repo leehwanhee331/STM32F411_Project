@@ -145,9 +145,9 @@ void delay_us(uint16_t us)
 
 void trig(void)
 {
-   HAL_GPIO_WritePin(TRIG1_GPIO_Port, TRIG1_Pin, HIGH);
+   HAL_GPIO_WritePin(TRIGER1_GPIO_Port, TRIGER1_Pin, HIGH);
    delay_us(10);
-   HAL_GPIO_WritePin(TRIG1_GPIO_Port, TRIG1_Pin, LOW);
+   HAL_GPIO_WritePin(TRIGER1_GPIO_Port, TRIGER1_Pin, LOW);
 }
 
 /**
