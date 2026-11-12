@@ -237,7 +237,6 @@ uint32_t echo(void) {
 `HAL_Delay(2)`를 주석 처리하고 `delay_us(200)`으로 변경하였다.
 
 ```c
-  /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
