@@ -210,9 +210,6 @@ uint32_t echo(void) {
 초기화 후 `timer_start()`를 호출하고, 루프에서 `trig()` 호출 뒤 `HAL_Delay(1)`로 대기한다.
 
 ```c
-  MX_GPIO_Init();
-  MX_TIM1_Init();
-  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   timer_start();
   /* USER CODE END 2 */
