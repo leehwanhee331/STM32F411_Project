@@ -7,13 +7,14 @@ STM32F411_Project test
 ![STM32F411 블럭도](img/F2.PNG) <br>
 ![STM32F411 블럭도](img/F3.PNG) <br>
 ![STM32F411 블럭도](img/F4.PNG) <br>
-![STM32F411 블럭도](img/F5.PNG) <br>
-![STM32F411 블럭도](img/F6.PNG) <br>
-![STM32F411 블럭도](img/F7.PNG) <br>
 
 ---
 
 ## Firmware
+
+![STM32F411 블럭도](img/F5.PNG) <br>
+![STM32F411 블럭도](img/F6.PNG) <br>
+![STM32F411 블럭도](img/F7.PNG) <br>
 
 * RCC : Disable
   
