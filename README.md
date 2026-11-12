@@ -690,7 +690,10 @@ C 언어로 작성한 GPIO 제어 코드와 HAL_Delay 함수가 ARM Cortex-M4 �
 
 ![GPIO Output](./img/gpio_debug3.png)
 
-GPIO 출력 상태 변화에 따른 레지스터 값을 디버깅 화면에서 관찰하였다.
+HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1) 실행 후 HAL_Delay(1000)에서 멈춘 상태의 GPIOA 레지스터 값을 Expressions 창에서 확인하였다.
+
+- GPIOA_ODR = 0x20 → bit 5 = 1 (PA5 HIGH, LED ON)
+- GPIOA_IDR = 0xc4ae
 
 ### 6.4 Oscilloscope Measurement
 
