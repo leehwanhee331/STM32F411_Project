@@ -693,6 +693,8 @@ C 언어로 작성한 GPIO 제어 코드와 HAL_Delay 함수가 ARM Cortex-M4 �
 
 **GPIO Output State**
 
+> 여기서부터는 출력 핀이 **PA5에서 PA6으로 변경**되어, PA6 기준의 실험이 시작된다.
+
 ![GPIO Output](./img/gpio_debug1.png)
 
 PA6 출력 신호를 오실로스코프로 측정할 때의 디버깅 화면이다. HAL_Delay(1000) 이후 다음 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0) 실행 직전에 멈춘 상태의 GPIOA 레지스터 값을 확인하였다.
