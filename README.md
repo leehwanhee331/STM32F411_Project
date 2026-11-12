@@ -3,11 +3,12 @@
    - [RM0383 Reference Manual : STM32F411xC/E advanced Arm  -based 32-bit MCUs](https://www.st.com/resource/en/reference_manual/rm0383-stm32f411xce-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 
 ## Table of Contents
-- [1. Architecture](#1-architecture)
-- [2. MemoryMap](#2-memorymap)
-- [3. Register](#3-register)
-- [4. Test](#4-test)
-- [6. GPIO LED Experiment](#6-gpio-led-experiment-stm32f411re
+- [1. Architecture](#1architecture)
+- [2. CLOCK](#2-clock)
+- [3. MemoryMap](#3memorymap)
+- [4. GPIO](#4-gpio)
+- [5. Test](#5test)
+- [6. GPIO LED Experiment (STM32F411RE)](#6-gpio-led-experiment-stm32f411re)
 
 ## 1.Architecture
 
@@ -695,17 +696,19 @@ GPIO 출력 상태 변화에 따른 레지스터 값을 디버깅 화면에서 �
 
 Tektronix TDS 2012B 오실로스코프를 이용하여 GPIO 출력 신호의 전압 변화를 측정하였다.
 
+**측정 대상 핀: PA6 (GPIOA Pin 6)**
+
 **Falling Edge (HIGH → LOW)**
 
 ![Falling Edge](./img/gpio_falling.jpg)
 
-GPIO 출력이 HIGH에서 LOW로 전환되는 하강 에지를 관찰하였다.
+PA6 출력이 HIGH에서 LOW로 전환되는 하강 에지를 관찰하였다.
 
 **Rising Edge (LOW → HIGH)**
 
 ![Rising Edge](./img/gpio_rising.jpg)
 
-GPIO 출력이 LOW에서 HIGH로 전환되는 상승 에지를 관찰하였다.
+PA6 출력이 LOW에서 HIGH로 전환되는 상승 에지를 관찰하였다.
 
 ### 6.5 Experiment Result
 
